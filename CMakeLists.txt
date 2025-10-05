@@ -17,6 +17,8 @@ qt_add_qml_module(appTest
     VERSION 1.0
     QML_FILES
         Main.qml
+        SOURCES VideoFrameProvider.h VideoFrameProvider.cpp
+        SOURCES FfmpegVideoReader.h FfmpegVideoReader.cpp
 )
 
 set(FFMPEG_DIR ${CMAKE_CURRENT_SOURCE_DIR}/Vendor/FFmpeg)
