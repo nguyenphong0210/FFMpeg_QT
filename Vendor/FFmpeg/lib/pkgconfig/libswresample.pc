@@ -1,0 +1,14 @@
+prefix=/home/phong/Downloads/FFmpeg-release-7.1/build
+exec_prefix=${prefix}
+libdir=/home/phong/Downloads/FFmpeg-release-7.1/build/lib
+includedir=/home/phong/Downloads/FFmpeg-release-7.1/build/include
+
+Name: libswresample
+Description: FFmpeg audio resampling library
+Version: 5.3.100
+Requires: libavutil >= 59.39.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lswresample -lm -latomic
+Libs.private: 
+Cflags: -I${includedir}

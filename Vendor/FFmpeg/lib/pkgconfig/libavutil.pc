@@ -1,0 +1,14 @@
+prefix=/home/phong/Downloads/FFmpeg-release-7.1/build
+exec_prefix=${prefix}
+libdir=/home/phong/Downloads/FFmpeg-release-7.1/build/lib
+includedir=/home/phong/Downloads/FFmpeg-release-7.1/build/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 59.39.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -pthread -lm -latomic -lX11 -lpthread -lxcb -lXau -lXdmcp
+Libs.private: 
+Cflags: -I${includedir}
